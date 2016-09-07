@@ -1,42 +1,50 @@
 body, html {
-    background-color: aquamarine;
+    background-color: #00BAFF;
     margin: 0;
     padding: 0;
-}
-
-.button {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    background-color: red;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-}
-
-.result {
-    margin: 30px;
-    padding: 20px 45px;
-    font-size: 55px;
-    font-weight: bold;
-    text-align: center;
-    background-color: white;
-    display: block;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 .counter {
     display: block;
     padding: 10px;
     width: 600px;
-    background-color: aqua;
+    background-color: #E2E2E2;
     transform: translate(-50%, -50%);
     position: absolute;
     left: 50%;
     top: 50%;
-    border: 5px solid black;
+    border-radius: 10px;
     text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px 20px 40px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #00BAFF;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        background-color: #00CCFF;
+    }
+
+    &:active {
+        background-color: #00A2CD;
+    }
+}
+
+.result {
+    margin: 30px;
+    padding: 20px 45px;
+    font-size: 55px;
+    font-weight: 200;
+    text-align: center;
+    background-color: white;
+    display: block;
 }
